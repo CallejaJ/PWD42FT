@@ -1,0 +1,31 @@
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.html {
+    display: inline;
+}
+
+
+.green {
+    margin-top: 3rem;
+    width: 50%;
+    height: 200px;
+    background-color: #c3c77e;
+    border: 1px solid black;
+    border-right: hidden;
+    text-align: left;
+}
+
+.salmon {
+    margin-top: 3rem;
+    width: 50%;
+    height: 200px;
+    background-color: #f9c4af;
+    border: 1px solid black;
+    border-left: hidden;
+    text-align: left;
+}
