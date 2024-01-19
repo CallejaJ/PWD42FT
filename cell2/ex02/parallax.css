@@ -1,0 +1,47 @@
+.wrapper {
+    height: 100vh;
+    /* overflow-x: hidden; */
+    perspective: 2px;
+}
+
+.section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+}
+
+.parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.static {
+    background: black;
+}
+
+.bg1::after {
+    max-width: 1194px;
+    max-height: 700px;
+    background-image: url('https://th.bing.com/th/id/R.9ecf55c35f414c2c393ae8f508da943c?rik=bcliNMdvn%2b43mA&riu=http%3a%2f%2fwallpapershome.com%2fimages%2fwallpapers%2fmaserati-alfieri-8982x5412-supercar-maserati-luxury-cars-sports-car-7401.jpg&ehk=thd%2f8MN7IYgu6GLQeAG0CY84caqMMknaQznuU0P9lmM%3d&risl=1&pid=ImgRaw&r=0');
+}
+
+.bg2::after {
+    max-width: 1194px;
+    background-image: url('https://s1.cdn.autoevolution.com/images/news/is-this-bugati-divo-200-times-better-than-the-corvette-c8-cause-thats-how-much-it-costs-186993_1.jpg');
+    max-height: 690px;
+}
+
+body {
+    margin: 0;
+}
