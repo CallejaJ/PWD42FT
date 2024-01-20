@@ -1,7 +1,5 @@
-.wrapper {
-    height: 100vh;
-    /* overflow-x: hidden; */
-    perspective: 2px;
+h1 {
+    color: white;
 }
 
 .section {
@@ -11,37 +9,43 @@
     align-items: center;
     justify-content: center;
     color: white;
-    text-shadow: 0 0 5px #000;
-}
-
-.parallax::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateZ(-1px) scale(1.5);
-    background-size: 100%;
-    z-index: -1;
+    text-align: center;
 }
 
 .static {
     background: black;
 }
 
-.bg1::after {
-    max-width: 1194px;
-    max-height: 700px;
-    background-image: url('https://th.bing.com/th/id/R.9ecf55c35f414c2c393ae8f508da943c?rik=bcliNMdvn%2b43mA&riu=http%3a%2f%2fwallpapershome.com%2fimages%2fwallpapers%2fmaserati-alfieri-8982x5412-supercar-maserati-luxury-cars-sports-car-7401.jpg&ehk=thd%2f8MN7IYgu6GLQeAG0CY84caqMMknaQznuU0P9lmM%3d&risl=1&pid=ImgRaw&r=0');
-}
-
-.bg2::after {
-    max-width: 1194px;
-    background-image: url('https://s1.cdn.autoevolution.com/images/news/is-this-bugati-divo-200-times-better-than-the-corvette-c8-cause-thats-how-much-it-costs-186993_1.jpg');
-    max-height: 690px;
-}
-
 body {
     margin: 0;
+}
+
+.parallax_contenedor1 {
+    /*imagen para el fondo con url de la web*/
+    background-image: url(https://th.bing.com/th/id/R.a23e2dcdd3de73def6ddbd3cae1742c6?rik=Qp5z6JrTCMtjVg&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f04%2f06%2f338054-landscape-Sun.jpg&ehk=SsN0SMy0iAXyYPKSGIUJc1FqWGO2tx3k%2fQngJQj%2flPs%3d&risl=&pid=ImgRaw&r=0);
+    height: 100vh;
+    /*para que la imagen de bg se quede fija, se centre y no se repita*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /*Display flex para responsive en todos dispos. align y justify para centrar en este caso*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax_contenedor2 {
+    /*imagen para el fondo con url de la web*/
+    background-image: url(https://th.bing.com/th/id/R.421042d62bfd392576b4dd8e16619bd8?rik=CgMKUHEz7fvEtA&pid=ImgRaw&r=0);
+    height: 100vh;
+    /*para que la imagen de bg se quede fija, se centre y no se repita*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /*Display flex para responsive en todos dispos. align y justify para centrar en este caso*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
