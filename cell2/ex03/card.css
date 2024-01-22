@@ -1,8 +1,9 @@
 .title {
     margin-top: 2rem;
     margin-bottom: 3rem;
-    color: brown;
-    text-align: center;
+    color: darkcyan;
+        text-shadow: darkblue;
+        text-align: center;
 }
 
 .center {
@@ -69,4 +70,33 @@ table {
     /* oculta los bordes de la tabla */
     box-shadow: 5px 5px 10px gray;
     /* añade una sombra de color gris */
-}
+    border: 2px solid var(--gris);
+        border-radius: 16px;
+        overflow: hidden;
+        display: flex;
+    
+        img {
+            padding: 2rem;
+        }
+    
+        tr {
+            margin-top: 0;
+        }
+    
+        h1 {
+            color: darkcyan;
+            text-decoration: none;
+            font-size: larger;
+        }
+    
+        h2,
+        h3 {
+            color: grey;
+            text-decoration: none;
+            font-size: larger;
+        }
+    
+        h4 {
+            color: darkgreen;
+        }
+        }
