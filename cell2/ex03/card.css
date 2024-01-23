@@ -1,9 +1,9 @@
 .title {
     margin-top: 2rem;
     margin-bottom: 3rem;
-    color: darkcyan;
-        text-shadow: darkblue;
+    color: whitesmoke;
         text-align: center;
+        
 }
 
 .center {
@@ -15,7 +15,7 @@
 
 .whitesmoke {
     justify-content: center;
-    background-color: whitesmoke;
+    background-color: #000000;
 }
 
 .space {
@@ -65,13 +65,15 @@ a:hover {
 }
 
 table {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        background-color: #f5f5f5;
     border: hidden;
     margin-bottom: 5rem;
     /* oculta los bordes de la tabla */
     box-shadow: 5px 5px 10px gray;
     /* añade una sombra de color gris */
     border: 2px solid var(--gris);
-        border-radius: 16px;
+        /* border-radius: 16px; */
         overflow: hidden;
         display: flex;
     
