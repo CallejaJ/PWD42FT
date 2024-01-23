@@ -101,4 +101,10 @@ table {
         h4 {
             color: darkgreen;
         }
-        }
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+
+}
